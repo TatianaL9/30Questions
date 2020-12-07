@@ -1,3 +1,5 @@
+import javafx.concurrent.Task
+
 plugins {
     id 'java'
 }
@@ -9,6 +11,11 @@ repositories {
     mavenCentral()
 }
 
+
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.testng', name: 'testng', version: '7.1.0'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
 }
+
+
